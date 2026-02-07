@@ -1,0 +1,48 @@
+---
+import Heading from "./Heading.astro";
+
+const heading = "🧩 Ce que nous faisons";
+
+const sections = [
+  "Automatisation des opérations internes",
+  "Workflows No-Code sur-mesure",
+  "Agents IA & assistants internes",
+  "Optimisation CRM & parcours clients",
+  "Génération de contenu automatisée par IA",
+  "Coaching & formation personnalisée",
+];
+const sectionsText = [
+  "Suppression des tâches manuelles répétitives (reporting, synchronisation de données, notifications) pour améliorer la productivité, réduire les erreurs humaines et fiabiliser les processus métiers.",
+  "Conception de workflows personnalisés via Airtable, Make.com et Notion pour connecter vos outils, centraliser vos données et automatiser vos opérations sans développement complexe.",
+  "Déploiement d’agents IA capables de répondre aux équipes, analyser des données, générer des contenus et assister les collaborateurs dans leurs tâches quotidiennes.",
+  "Automatisation complète du parcours client : capture de leads, qualification intelligente, suivi commercial et relances automatiques pour améliorer le taux de conversion.",
+  "Mise en place de systèmes IA produisant articles, emails, posts ou documents à partir de vos données pour accélérer la création de contenu sans perte de qualité.",
+  "Accompagnement stratégique et formations sur mesure pour rendre vos équipes autonomes en No-Code, automatisation et IA, avec des méthodes applicables immédiatement.",
+];
+---
+
+<div class="mb-12 bg-stone-100 dark:bg-slate-800">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <Heading heading={heading} />
+    <div
+      class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+    >
+      {
+        sections.map((section) => {
+          return (
+            <div class="flex flex-col">
+              <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                  {sections[sections.indexOf(section)]}
+                </h3>
+                <p class="mb-8 mt-2 text-lg text-gray-700 dark:text-gray-400">
+                  {sectionsText[sections.indexOf(section)]}
+                </p>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>

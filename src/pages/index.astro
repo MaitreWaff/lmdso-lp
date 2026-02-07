@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Header from "../components/Header.astro";
+import Heading from "../components/Heading.astro";
+import FAQ from "../components/FAQ.astro";
+import CTA from "../components/CTA.astro";
+import FeatureList from "../components/FeatureList.astro";
+import Pricing from "../components/Pricing.astro";
+
+import Timeline from "../components/Timeline.astro";
+
+import data from "../data/site.json";
+---
+
+<Layout title={data.siteName}>
+  <main>
+    <Header buttonText="Commencez avec une stratégie gratuite" buttonAltText="Démarrer avec un audit offert"/>
+    <CTA title="🚀 Pourquoi Nous" body="🔹 Éliminez les tâches répétitives. Fini les processus manuels. On automatise tout avec des workflows intelligents." />
+    <FeatureList />
+    <Timeline />
+
+    <Heading heading="Hello World" />
+
+    <Pricing />
+    <FAQ />
+  </main>
+</Layout>
