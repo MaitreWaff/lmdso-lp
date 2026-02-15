@@ -11,18 +11,52 @@ import Pricing from "../components/Pricing.astro";
 import Timeline from "../components/Timeline.astro";
 
 import data from "../data/site.json";
+import UICTA from "../ui/UICTA.astro";
+import UICustomerLogos from "../ui/UICustomerLogos.astro";
+import CustomerLogos from "../components/CustomerLogos.astro";
+import VisualImageHeading from "../components/VisualImageHeading.astro";
+import UIVisualImageHeading from "../ui/UIVisualImageHeading.astro";
+import UIVisualImageHeadingIL from "../ui/UIVisualImageHeadingIL.astro";
+import UIVisualImageHeadingIR from "../ui/UIVisualImageHeadingIR.astro";
+import UIFAQ from "../ui/UIFAQ.astro";
 ---
 
 <Layout title={data.siteName}>
   <main>
     <Header buttonText="Commencez avec une stratégie gratuite" buttonAltText="Démarrer avec un audit offert"/>
-    <CTA title="🚀 Pourquoi Nous" body="🔹 Éliminez les tâches répétitives. Fini les processus manuels. On automatise tout avec des workflows intelligents." />
+    <!-- <CTA title="🚀 Pourquoi Nous" body="🔹 Éliminez les tâches répétitives. Fini les processus manuels. On automatise tout avec des workflows intelligents." /> -->
+
+    <UICTA 
+    title="🚀 Pourquoi Nous" 
+    body1="🔹 Éliminez les tâches répétitives. Fini les processus manuels. On automatise tout avec des workflows intelligents." 
+    body2="🔹 Pas besoin de coder. Solutions 100 % no-code reconnues + intégrations puissantes." 
+    body3="🔹 Stratégies IA sur-mesure. Captez l’efficacité de l’IA pour vos opérations, ventes & marketing." 
+    />
+
+
+    <!-- <Heading heading="Customer Logos" /> -->
+    <UICustomerLogos />
+    <CustomerLogos />
+
+
+    <!-- <Heading heading="Visual Image Heading" /> -->
+    <!-- <VisualImageHeading /> -->
+    <UIVisualImageHeadingIR />
+    <UIVisualImageHeadingIL />
+    
+
+
     <FeatureList />
+
+
+
+
     <Timeline />
 
     <Heading heading="Hello World" />
 
     <Pricing />
-    <FAQ />
+    <UIFAQ />
+    <!-- <FAQ /> -->
   </main>
 </Layout>

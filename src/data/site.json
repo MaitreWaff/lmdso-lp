@@ -1,12 +1,12 @@
 {
-  "owner": "John Smith",
+  "owner": "MaitreWaff",
   "siteName": "lmDevSecOps",
   "siteDescription": "Nous concevons pour vous des solutions No-Code, IA & Automatisation qui accélèrent votre croissance, libèrent votre temps et multiplient vos revenus.",
   "about": "I'm a web developer from Anytown, USA. I like to build things with HTML, CSS, and JavaScript.",
   "contact": {
     "email": "contact@lmdevsecops.com",
-    "phone": "555-555-5555",
-    "address": "1234 Main St. Anytown, USA 12345"
+    "phone": "699-581-262",
+    "address": "Ndogbong Douala, Cameroon"
   },
   "pages": [
     {
@@ -77,5 +77,35 @@
       "type": "WordPress",
       "repo": "https://github.com"
     }
-  ]
+  ],
+  "faqs": [
+		{
+		"question": "Qu’est-ce que le No-Code ?",
+		"answer": "Le No-Code permet de créer des applications, automatisations et outils métiers sans écrire de code, à l’aide de plateformes spécialisées."
+		},
+		{
+		"question": "Le No-Code est-il fiable pour une entreprise ?",
+		"answer": "Oui. Les outils No-Code modernes sont utilisés par des startups, PME et grands groupes. Ils offrent sécurité, scalabilité et robustesse."
+		},
+		{
+		"question": "Quelle est la différence entre automatisation et IA ?",
+		"answer": "Automatisation : exécute des tâches répétitives selon des règles; IA : analyse, génère, décide ou assiste intelligemment. Les deux combinés offrent une puissance maximale."
+		},
+		{
+		"question": "Combien de temps faut-il pour automatiser un processus ?",
+		"answer": "De quelques jours à quelques semaines selon la complexité. Les premiers résultats sont souvent visibles très rapidement."
+		},
+		{
+		"question": "Est-ce adapté aux petites entreprises ?",
+		"answer": "Absolument. Le No-Code et l’automatisation sont particulièrement rentables pour les TPE et PME."
+		},
+		{
+		"question": "Quel est le ROI attendu ?",
+		"answer": "La majorité des clients amortissent leur investissement en quelques semaines grâce au gain de temps et à la réduction des erreurs."
+		},
+		{
+		"question": "Puis-je faire évoluer les solutions plus tard ?",
+		"answer": "Oui. Les solutions sont conçues pour être évolutives et documentées."
+		}
+		]
 }
